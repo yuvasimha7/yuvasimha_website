@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - My Website{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="about-section">
+        <h1>About Me</h1>
+        
+        <div class="about-content">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" id="profile-pic">
+                    <p class="image-note">Add your profile picture to static/images/profile.jpg</p>
+                </div>
+                
+                <div class="profile-info">
+                    <h2>John Doe</h2>
+                    <p class="title">Full Stack Developer</p>
+                    
+                    <div class="bio">
+                        <p>Hello! I'm a passionate developer who loves creating innovative solutions and building amazing web applications. With expertise in Python, Flask, and modern web technologies, I enjoy turning complex problems into simple, elegant solutions.</p>
+                        
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blogs and tutorials.</p>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <strong>Email:</strong> john.doe@example.com
+                        </div>
+                        <div class="contact-item">
+                            <strong>LinkedIn:</strong> linkedin.com/in/johndoe
+                        </div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong> github.com/johndoe
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Your City, Country
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
